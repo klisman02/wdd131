@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple HTML template for a webpage about temples." />
+    <link rel="stylesheet" href="temples.css" />
+    <link rel="stylesheet" href="temples-large.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Temples</title>
+</head>
+<body>
+<header class="site-header">
+    <h1>Welcome to the Temples Page</h1>
+    <button id="hamburger-btn" aria-label="Menu" aria-expanded="false" aria-controls="primary-navigation">
+    ☰
+    </button>
+    <nav class="site-nav" id="primary-navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#old">Old</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#large">Large</a></li>
+            <li><a href="#small">Small</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="grid-container">
+        <div class="temple-card">
+        <img src="images/barranquilla-columbia-temple.jpeg" alt="Barranquilla Columbia Temple" />
+        <figcaption>Barranquilla Columbia Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/indianapolis_indiana_temple.jpeg" alt="Indianopolis Temple" />
+        <figcaption>Indianopolis Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/belem-brazil-temple.jpeg" alt="Belem Brazil Temple" />
+        <figcaption>Belem Brazil Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/campinas-brazil-temple.jpeg" alt="Campinas Brazil Temple" />
+        <figcaption>Campinas Brazil Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/detroit-temple.jpeg" alt="Detroit Temple" />
+        <figcaption>Detroit Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/aba-nigeria-temple.jpeg" alt="Aba Nigeria Temple" />
+        <figcaption>Aba Nigeria Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/mexico-city-temple.jpeg" alt="Mexico City Temple" />
+        <figcaption>Mexico City Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/praia-cape-verde-temple.jpeg" alt="Praia Cape Verde Temple" />
+        <figcaption>Praia Cape Verde Temple</figcaption>
+        </div>
+        <div class="temple-card">
+        <img src="images/sao-paulo-brazil-temple.jpeg" alt="Sao Paulo Brazil Temple" />
+        <figcaption>Sao Paulo Brazil Temple</figcaption>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Klisman Gomes Barbosa da Silva - São Paulo</p>
+    <p id="lastModified">Last Modification: </p>
+</footer>
+
+<script src="./temples.js"></script>
+</body>
+</html>
