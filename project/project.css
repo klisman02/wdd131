@@ -1,0 +1,226 @@
+/* ==== Global Styles ==== */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C2833; /* Dark Slate background */
+    color: #FDFEFE; /* Off-White text */
+    line-height: 1.6;
+}
+
+/* ==== Layout Containers ==== */
+header, main, footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ==== Header ==== */
+header {
+    background-color: #1C2833;
+    color: #FDFEFE;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+/* ==== Section Block Styling ==== */
+section {
+    background-color: #2E3B4E; /* A slightly lighter shade */
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #E74C3C; /* Bright Red */
+}
+
+h2 {
+    border-bottom: 2px solid #6C7A89;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* ==== Links and Interactivity ==== */
+a {
+    color: #E74C3C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==== Temple Cards Container ==== */
+.temple-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* ==== Individual Temple Card ==== */
+.temple-card {
+    background-color: #34495E;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+    transform: scale(1.02);
+}
+
+/* ==== Temple Image Styling ==== */
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* ==== Site Name Image Styling ==== */
+#site-name img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== Wireframe Section Images ==== */
+section#wireframe img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px dashed #E74C3C;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== Footer ==== */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #6C7A89;
+    font-size: 0.9em;
+}
+
+/* ==== Media Queries for Responsiveness ==== */
+
+/* Tablets (max width 768px) */
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .temple-card {
+        width: 100%;
+    }
+
+    #site-name img {
+        max-width: 200px;
+    }
+
+    section#wireframe img {
+        max-width: 90%;
+        padding: 5px;
+        border-width: 1px;
+    }
+}
+
+/* Phones (max width 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .temple-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #site-name img {
+        max-width: 180px;
+    }
+
+    section#wireframe img {
+        max-width: 90%;
+        padding: 5px;
+    }
+}
+
+/* ==== Accessibility & Contrast Enhancements ==== */
+
+/* Ensure strong contrast for text */
+body, section, .temple-card {
+    color: #FDFEFE;
+    background-color: #1C2833;
+}
+
+/* High contrast links */
+a {
+    color: #FF6F61; /* Softer red for better legibility */
+}
+
+a:hover, a:focus {
+    color: #FFA07A; /* Light coral on hover */
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Buttons (if any) */
+button, .btn {
+    background-color: #E74C3C;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+button:hover, .btn:hover {
+    background-color: #FF5733;
+}
+
+/* Improve focus outlines for keyboard users */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #FFA07A;
+    outline-offset: 2px;
+}
