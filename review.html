@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <main style="text-align: center; margin-top: 100px;">
+    <h1>Thank you for your review!</h1>
+    <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
+  </main>
+
+  <script>
+    // Increment review count in localStorage
+    const countKey = 'reviewCount';
+    let count = localStorage.getItem(countKey);
+    count = count ? parseInt(count) + 1 : 1;
+    localStorage.setItem(countKey, count);
+    document.getElementById('reviewCount').textContent = count;
+  </script>
+</body>
+</html>
+    <script src="form.js"></script>
+    </body>
