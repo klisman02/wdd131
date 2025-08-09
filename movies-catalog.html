@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MovieCatalog – Your Movie Guide to the best movies across genres and years. Search, filter, and explore top-rated films.">
+    <title>MovieCatalog – Your Movie Guide</title>
+    <link rel="stylesheet" href="movies-catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🎬 MovieCatalog</h1>
+        <p class="tagline">Your Movie Guide</p>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search for a movie...">
+            <select id="genre">
+                <option value="">All Genres</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+            </select>
+            <select id="year">
+                <option value="">All Years</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+    <section class="movie-carousel" id="movieCarousel">
+        <article class="movie-card active">
+            <img src="images/inception.webp" alt="Movie Poster" loading="lazy">
+            <h2>Inception</h2>
+            <p class="year">2010</p>
+            <p class="rating">⭐ 8.8</p>
+        </article>
+
+        <article class="movie-card">
+            <img src="images/interstellar.webp" alt="Movie Poster" loading="lazy">
+            <h2>Interstellar</h2>
+            <p class="year">2014</p>
+            <p class="rating">⭐ 8.6</p>
+        </article>
+
+        <article class="movie-card">
+            <img src="images/dark-night.jpg" alt="Movie Poster" loading="lazy">
+            <h2>The Dark Knight</h2>
+            <p class="year">2008</p>
+            <p class="rating">⭐ 9.0</p>
+        </article>
+
+        <article class="movie-card">
+            <img src="images/lord-of-the-rings.jpg" alt="Movie Poster" loading="lazy">
+            <h2>Lord of The Rings: The Fellowship of the Ring</h2>
+            <p class="year">2001</p>
+            <p class="rating">⭐ 8.8</p>
+        </article>
+    </section>
+</main>
+
+    
+    <main>
+        <section class="movie-grid" id="movieGrid">
+            <!-- JS will insert cards here -->
+        </section>
+    </main>
+
+    <footer>
+        <form id="contactForm" action="#" method="post">
+            <label for="email">Subscribe to our newsletter:</label>
+            <input type="email" id="email" name="email" required placeholder="Your email">
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p>&copy; 2025 MovieCatalog. All rights reserved.</p>
+    </footer>
+
+    <script src="movies-catalog.js"></script>
+</body>
+</html>

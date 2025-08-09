@@ -1,0 +1,141 @@
+/* ==== Global Styles ==== */
+body {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C2833; /* Dark Slate */
+    color: #FDFEFE; /* Off-White */
+    line-height: 1.6;
+}
+
+/* ==== Header ==== */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1C2833;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+    color: #E74C3C;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #6C7A89;
+    margin-bottom: 20px;
+}
+
+/* Carousel container */
+.movie-carousel {
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+    transition: ease;
+}
+
+/* Cards ocultos por padrão */
+.movie-carousel .movie-card {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Card ativo visível */
+.movie-carousel .movie-card.active {
+    display: block;
+    opacity: 1;
+    position: relative;
+}
+
+
+/* ==== Search & Filters ==== */
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 8px 12px;
+    border: 1px solid #6C7A89;
+    border-radius: 4px;
+    background-color: #2E3B4E;
+    color: #FDFEFE;
+    font-size: 1em;
+}
+
+/* ==== Movie Grid ==== */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #2E3B4E;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+}
+
+.movie-card img {
+  width: 250px;       /* largura fixa */
+  height: 375px;      /* altura fixa (proporção 2:3) */
+  object-fit: cover;  /* corta o que não cabe, mantém proporção */
+  border-radius: 8px; /* se quiser borda arredondada */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+.movie-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #E74C3C;
+    margin: 0;
+}
+
+.movie-card .year {
+    color: #6C7A89;
+    font-size: 0.9em;
+}
+
+.movie-card .rating {
+    font-weight: bold;
+    color: #FDFEFE;
+    margin-top: 5px;
+}
+
+/* ==== Footer ==== */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #6C7A89;
+    font-size: 0.9em;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    h1 { font-size: 2em; }
+}
+
+@media (max-width: 480px) {
+    .search-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+}
