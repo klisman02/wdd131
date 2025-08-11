@@ -96,7 +96,6 @@ input[type="submit"]:focus {
 }
 
 /* Rating stars - styled radio buttons */
-
 .rating {
   display: flex;
   gap: 10px;
@@ -121,7 +120,6 @@ input[type="submit"]:focus {
 }
 
 /* Checkbox group (Useful Features) */
-
 .checkbox-group {
   display: flex;
   flex-wrap: wrap;
@@ -144,7 +142,6 @@ input[type="submit"]:focus {
 }
 
 /* Responsiveness */
-
 @media (max-width: 600px) {
   main {
     margin: 20px 10px;
