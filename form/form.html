@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+    <header>
+        <!-- Common header used across all assignments -->
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+        <fieldset>
+            <legend>Product Review</legend>
+
+            <div>
+            <label for="productName">Product Name *</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+            </div>
+
+            <div>
+            <label>Overall Rating *</label><br>
+            <!-- Rating stars (input type="radio") will be added dynamically using JavaScript -->
+            </div>
+
+            <div>
+            <label for="installationDate">Date of Installation *</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+
+            <div>
+            <label>Useful Features</label><br>
+            <!-- Useful features checkboxes (input type="checkbox") will be populated dynamically using JavaScript -->
+            </div>
+
+            <div>
+            <label for="writtenReview">Written Review</label>
+            <textarea id="writtenReview" name="writtenReview"></textarea>
+            </div>
+
+            <div>
+            <label for="userName">User Name</label>
+            <input type="text" id="userName" name="userName">
+            </div>
+
+            <div>
+            <input type="submit" value="Submit Review">
+            </div>
+        </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Common footer used across all assignments -->
+        <p>&copy; 2025 Klisman Gomes. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="form.js"></script>
+    </body>
+    </html>
